@@ -30,6 +30,13 @@ const ReplayPage: React.FC = () => {
           </li>
         ))}
       </ul>
+            <button
+        onClick={() => navigate("/")}
+        className="mt-6 px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 cursor-pointer"
+      >
+        {" "}
+        กลับหน้าแรก
+      </button>
     </div>
   );
 };

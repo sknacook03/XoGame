@@ -65,13 +65,13 @@ const GamePage: React.FC = () => {
 
             <button
               onClick={handleStartGame}
-              className="w-full bg-blue-600 text-white py-2 rounded"
+              className="w-full bg-blue-600 text-white py-2 rounded  cursor-pointer"
             >
               🎮 เริ่มเกม
             </button>
             <button
               onClick={() => navigate("/replay")}
-              className="w-full border border-blue-600 text-blue-600 py-2 rounded mt-4"
+              className="w-full border border-blue-600 text-blue-600 py-2 rounded mt-4 cursor-pointer"
             >
               📼 ดูรีเพลย์
             </button>
