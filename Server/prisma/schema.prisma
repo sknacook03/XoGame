@@ -1,0 +1,19 @@
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+model GameHistory {
+  id           String   @id @default(uuid())
+  boardSize    Int
+  moves        Json
+  winner       String
+  mode         String    
+  difficulty   String?  
+  createdAt    DateTime  @default(now())
+}
